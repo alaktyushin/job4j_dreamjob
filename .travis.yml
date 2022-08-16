@@ -1,0 +1,20 @@
+language: java
+
+env:
+  global:
+    - Codecov Token=7cacbc8d-d8da-4353-a809-28e11e476bbf
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+jdk:
+  - openjdk17
+
+sudo: false
+
+notifications:
+  email:
+    recipients:
+      - andrey@laktyushin.com
+    on_success: never # default: change
+    on_failure: always # default: always
