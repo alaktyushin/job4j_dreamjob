@@ -1,1 +1,2 @@
-# job4j_dreamjob
+# Проект "Работа мечты"
+job4j_dreamjob
