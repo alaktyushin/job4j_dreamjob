@@ -14,7 +14,7 @@ public class PostStore {
     private PostStore() {
         posts.put(1, new Post(1, "Junior Java Job", "Description of JJJob"));
         posts.put(2, new Post(2, "Middle Java Job", "Description of Middle Java Developer Job"));
-        posts.put(3, new Post(3, "Senior Java Job"));
+        posts.put(3, new Post(3, "Senior Java Job", "No Description"));
     }
 
     public static PostStore instOf() {
