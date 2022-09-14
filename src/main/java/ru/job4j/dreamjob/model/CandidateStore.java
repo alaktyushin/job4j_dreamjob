@@ -14,11 +14,11 @@ public class CandidateStore {
     private final Map<Integer, Candidate> candidates = new ConcurrentHashMap<>();
 
     private CandidateStore() {
-        candidates.put(1, new Candidate(UUID.randomUUID(), "Andrey", "CV of Andrey", LocalDateTime.now()));
-        candidates.put(2, new Candidate(UUID.randomUUID(), "Boris", "CV of Boris", LocalDateTime.now()));
-        candidates.put(3, new Candidate(UUID.randomUUID(), "Clare", "CV of Clare", LocalDateTime.now()));
-        candidates.put(4, new Candidate(UUID.randomUUID(), "Clara", "CV of Clara", LocalDateTime.now()));
-        candidates.put(5, new Candidate(UUID.randomUUID(), "Boris", "CV of Boris", LocalDateTime.now()));
+        candidates.put(1, new Candidate(1, "Andrey", "CV of Andrey", LocalDateTime.now()));
+        candidates.put(2, new Candidate(2, "Boris", "CV of Boris", LocalDateTime.now()));
+        candidates.put(3, new Candidate(3, "Clare", "CV of Clare", LocalDateTime.now()));
+        candidates.put(4, new Candidate(4, "Clara", "CV of Clara", LocalDateTime.now()));
+        candidates.put(5, new Candidate(5, "Boris", "CV of Boris", LocalDateTime.now()));
     }
 
     public static CandidateStore instOf() {

@@ -29,7 +29,7 @@
         <table class="table">
             <thead>
             <tr>
-                <th scope="col">UUID</th>
+                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Description</th>
                 <th scope="col">Created</th>
@@ -40,7 +40,7 @@
                 <td th:text="${candidate.id}" />
                 <td th:text="${candidate.name}" />
                 <td th:text="${candidate.description}" />
-                <td th:text="${candidate.created}" />
+                <td th:text="${#temporals.format(candidate.created, 'dd MMMM, yyyy')}" />
             </tr>
             </tbody>
         </table>
