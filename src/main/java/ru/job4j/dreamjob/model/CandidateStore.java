@@ -3,7 +3,6 @@ package ru.job4j.dreamjob.model;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.Map;
-import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 /* Singleton */
